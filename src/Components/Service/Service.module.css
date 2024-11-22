@@ -1,3 +1,4 @@
+/* Service Container */
 .service_container {
     width: 100%;
     position: relative;
@@ -81,17 +82,28 @@
     margin: 10px 0;
 }
 
+/* Gallery */
 .Gallery {
-    columns: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .Gallery .gallery_img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 1rem;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
+    cursor: pointer;
+    aspect-ratio: 1 / 1;
+    /* Ensures consistent square images */
+}
+
+.Gallery .gallery_img:nth-child(3) {
+    grid-row: span 2;
+    /* Stretches the 3rd image vertically */
+    aspect-ratio: auto;
+    /* Removes aspect-ratio for this image */
 }
 
 .Gallery .gallery_img::after {
@@ -125,43 +137,117 @@
     -webkit-text-stroke: 1px rgba(225, 225, 225, 1);
 }
 
-.Gallery .gallery_img:hover:before{
-    -webkit-text-stroke-color:rgba(249, 230, 184, 1) ;
+.Gallery .gallery_img:hover:before {
+    -webkit-text-stroke-color: rgba(249, 230, 184, 1);
 }
 
 .Gallery .gallery_img img {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
     object-fit: cover;
-    transition: .6s;
+    transition: 0.6s;
 }
 
-.Gallery .gallery_img:hover img{
+.Gallery .gallery_img:hover img {
     transform: scale(1.04);
     filter: saturate(200%);
 }
 
-@media screen and (max-width: 900px){
-    .service_container .service_info{
+/* Modal Overlay */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+    /* Prevent main page scrolling */
+}
+
+/* Modal Container */
+.modal {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90%;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    overflow-x: hidden;
+    /* Remove horizontal scrolling */
+    color: #333;
+}
+
+/* Modal Text */
+.modal h2,
+.modal h3,
+.modal p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.modal p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Close Button */
+.modal .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.modal .closeButton:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+/* Prevent Body Scrolling */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 900px) {
+    .service_container .service_info {
         flex-direction: column;
         gap: 20px;
     }
 
-    .service_container .service_content{
+    .service_container .service_content {
         bottom: 0%;
     }
 
-    .service_container .service_info .content_wrapper{
+    .service_container .service_info .content_wrapper {
         width: 100%;
     }
 
-    .service_container .service_info .content_wrapper p{
-       width: 100%;
+    .service_container .service_info .content_wrapper p {
+        width: 100%;
     }
 
-    .Gallery{
-        margin-top: 120px;
+    .Gallery {
+        grid-template-columns: 1fr;
+        /* Stacks gallery images */
+        margin-top: 2rem;
     }
-    
+
+    .Gallery .gallery_img {
+        aspect-ratio: auto;
+    }
 }

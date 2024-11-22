@@ -1,7 +1,7 @@
 import React from 'react'
 import aboutCSS from './../About/About.module.css'
 import profileImg from './../../assets/profile.jpg'
-import about_img from './../../assets/about.jpg'
+import about_img from './../../assets/profile_picc.png'
 import jira from './../../assets/jira.svg'
 import smart from './../../assets/smart.svg'
 import coda from './../../assets/coda.svg'
@@ -12,14 +12,14 @@ function About() {
         <div className={`${aboutCSS.About_wrapper} setcion`} id="about">
             <div className="Section_title">
                 <p>AGILE LEADER & SCRUM MASTER</p>
-                <h2>Hi ! I M <span>Munya</span> , An Agile Leader <br /> Based in Canada.</h2>
+                <h2>Hi ! I M <span>Munya</span> , A Project Manager <br /> Based in Canada.</h2>
             </div>
 
             <div className={aboutCSS.about_container}>
                 <div className={aboutCSS.about_details}>
                     <h2>600+</h2>
                     <small>Projects Completed</small>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestiae laudantium esse eius sunt tempore eligendi temporibus. Dicta, id aspernatur?</p>
+                    <p>Each project reflects a commitment to excellence, delivering value-driven solutions across diverse industries. From concept to execution, I ensure seamless collaboration, timely delivery, and impactful results</p>
                     <div className={aboutCSS.profile}>
                         <img src={profileImg} alt="profile-image" />
                         <i className="ri-arrow-right-up-line"></i>
@@ -35,7 +35,7 @@ function About() {
                     <div className={aboutCSS.about_detail}>
                         <p>My Creative Toolkit</p>
                         <h3>The Tools behind <br /> Creating the Magic</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sint id consequatur voluptatum pariatur eveniet.</p>
+                        <p>Empowering projects with industry-leading tools for seamless collaboration and effective management.</p>
 
                         <div className={aboutCSS.Tools}>
                             <div className={aboutCSS.Tool}>
@@ -57,16 +57,22 @@ function About() {
             <div className={aboutCSS.awards_container}>
                 <div className={aboutCSS.awards_image}>
                     <img src={award} alt="award-image" />
-                    <i className='ri-play-line'></i>
+                    <i className="ri-award-line"></i>
+
                 </div>
                 <div className={aboutCSS.awards_details}>
                     <p>Highlight & Accomplishment</p>
                     <h3>Award & Recognition</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, error. Molestias ipsum assumenda impedit ad ullam magni, obcaecati nemo esse eveniet veniam adipisci consectetur distinctio.</p>
+                    <p>Recognized for excellence and dedication, these certifications and awards highlight my commitment to professional growth and delivering exceptional results</p>
                     <div className={aboutCSS.awards_list}>
-                        <p><i className='ri-trophy-line'> </i>Award-winning Project</p>
-                        <p><i className='ri-trophy-line'> </i>Featured in The Verse</p>
-                        <p><i className='ri-trophy-line'> </i>Collaborated With Convarse</p>
+                        <p><i className='ri-trophy-line'></i>ISC2 Cybersecurity(CC)</p>
+                        <p><i className='ri-trophy-line'> </i>SAFe Agilist</p>
+                        <p><i className='ri-trophy-line'> </i>ICP-ACC</p>
+                        <p><i className='ri-trophy-line'> </i>PMI-ACP</p>
+                        <p><i className='ri-trophy-line'></i>PMP</p>
+                        <p><i className='ri-trophy-line'> </i>TKP</p>
+                        <p><i className='ri-trophy-line'> </i>Google Cloud Digital Leader</p>
+                        <p><i className='ri-trophy-line'> </i>CSM</p>
                     </div>
                 </div>
             </div>
