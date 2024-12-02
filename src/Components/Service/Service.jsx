@@ -15,28 +15,50 @@ function Service() {
     const galleryData = [
         {
             img: gallery01,
-            title: 'Project 1',
-            description: 'Description for Project 1. Delivered exceptional results.',
+            title: 'Ultimate Solutions Group (UKG), ',
+            description: `
+                SAFe Agile Transformation: Implemented SAFe framework for workforce management, achieving a 30% productivity increase and 20% reduction in project lead times.
+                Agile Maturity Enhancement: Improved Agile maturity by 15%, reduced defects by 25%, and increased customer satisfaction by 10%.
+                Risk Mitigation Dashboard: Developed KPIs and dashboards to reduce risks by 40% and enhance stakeholder visibility.
+            `,
         },
+        
         {
             img: gallery02,
-            title: 'Project 2',
-            description: 'Description for Project 2. Successfully managed end-to-end.',
+            title: 'Quantik Global Consulting Projects',
+            description: `
+                Data Migration to Oracle Cloud: Migrated financial data to Oracle Cloud, reducing delivery time by 20%, improving data access by 15%, and lowering operational costs through decommissioning legacy systems.
+                Enhanced Project Visibility: Created custom Jira dashboards for financial applications, increasing stakeholder satisfaction by 15% and improving transparency in tracking compliance and investment risks.
+                Agile Transformation: Facilitated Agile adoption for financial product teams, improving productivity by 30%, reducing delivery time by 20%, and streamlining development for key systems like loan processing and financial planning tools.
+            `,
         },
+        
         {
-            img: gallery03,
-            title: 'Project 3',
-            description: 'Description for Project 3. Streamlined processes efficiently.',
+            img: gallery03, 
+            title: 'Afriforce Data Projects',
+            description: `
+                System Performance Optimization: Enhanced data analytics tools for financial reporting, increasing performance by 30% and sprint completion by 35%. Optimized architecture for faster data visualization and risk analysis.
+                Cross-Departmental Coordination: Streamlined workflows across finance departments, reducing delays and achieving a 98% on-time delivery rate for projects like portfolio management and financial reporting schedules.
+                Agile Process Refinement: Improved Agile processes for financial software delivery, increasing team velocity by 20% and ensuring consistent, high-quality, on-time delivery of tools like revenue analytics and tax compliance software.
+            `,
         },
         {
             img: gallery04,
-            title: 'Project 4',
-            description: 'Description for Project 4. Exceeded expectations.',
+            title: 'Empower Technologies Projects',
+            description: `
+                Operational Reporting Enhancement: Built Oracle BI solutions for real-time retail analytics, improving decision-making and reporting satisfaction by 20%. Delivered dashboards for sales, inventory tracking, and customer insights to boost efficiency and control.
+                Data Security and Access: Enhanced secure data access and query performance for retail dashboards, reducing query time by 30% and improving data security. Implemented protocols for access management and optimized sensitive data handling.
+                Agile Process Optimization: Refined Agile practices for BI teams, achieving a 98% on-time delivery rate for tools like promotion analysis, supply chain analytics, and retail demand forecasting.
+            `,
         },
         {
-            img: gallery05,
-            title: 'Techsol Systems',
-            description: 'Description for Project 5. Innovated agile practices.',
+            img: gallery05, 
+            title: 'Techsol Systems Projects',
+            description: `
+                Business Intelligence for Retail Strategy: Developed BI solutions that increased profitability by 10%, including dashboards for sales, customer segmentation, and retail trends analysis to support data-driven decisions.
+                Optimized Data Structures: Streamlined reporting by creating star schemas and improving data layers, reducing report generation time by 20% and retrieval by 25%. Key projects included inventory performance, automated sales reporting, and supplier analytics.
+                Data Integrity Enhancement: Ensured data accuracy and reliability for retail BI, improving customer purchase data integrity, stock monitoring, and retail performance dashboards.
+            `,
         },
     ];
 

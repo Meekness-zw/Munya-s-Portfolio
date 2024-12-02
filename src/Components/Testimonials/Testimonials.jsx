@@ -25,27 +25,27 @@ function Testimonials() {
                 loop={true}
 
                 breakpoints={{
-                    0:{
-                        slidesPerView:1,
+                    0: {
+                        slidesPerView: 1,
                     },
-                    768:{
-                        slidesPerView:2,
+                    768: {
+                        slidesPerView: 2,
                     },
-                    1024:{
-                        slidesPerView:3,
+                    1024: {
+                        slidesPerView: 3,
                     }
                 }}
             >
                 <SwiperSlide>
                     <div className={testimonialCSS.Testimonial}>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, aspernatur.</p>
+                        <p>My team worked with Munya on UKG Scheduling Employee preferences program. He is very organized and knowledgeable of scrums and processes around agile. Very professional and whiling to help his colleagues. I recommend him for leading agile teams and project management. </p>
 
                         <div className={testimonialCSS.testimonial_profile}>
                             <i className="ri-user-line"></i>
-                            <span>Lina Parsque</span>
+                            <span>Oumar Mbaye</span>
 
                             <i className='ri-briefcase-4-line'></i>
-                            <span>Web Journalist</span>
+                            <span>Senior Engineering Leader</span>
                         </div>
                     </div>
                 </SwiperSlide>

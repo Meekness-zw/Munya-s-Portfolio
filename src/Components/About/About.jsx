@@ -12,24 +12,24 @@ function About() {
         <div className={`${aboutCSS.About_wrapper} setcion`} id="about">
             <div className="Section_title">
                 <p>AGILE LEADER & SCRUM MASTER</p>
-                <h2>Hi ! I M <span>Munya</span> , A Project Manager <br /> Based in Canada.</h2>
+                <h2>Hi ! I M <span>Munya</span> , A Project Manager .<br /></h2>
             </div>
 
             <div className={aboutCSS.about_container}>
                 <div className={aboutCSS.about_details}>
-                    <h2>600+</h2>
+                    <h2>60+</h2>
                     <small>Projects Completed</small>
                     <p>Each project reflects a commitment to excellence, delivering value-driven solutions across diverse industries. From concept to execution, I ensure seamless collaboration, timely delivery, and impactful results</p>
                     <div className={aboutCSS.profile}>
-                        <img src={profileImg} alt="profile-image" />
+                        <img src={about_img} alt="profile-image" />
                         <i className="ri-arrow-right-up-line"></i>
                     </div>
                 </div>
                 <div className={aboutCSS.about_content}>
                     <div className={aboutCSS.about_image}>
-                        <img src={about_img} alt="about-image" />
+                        <img src={profileImg } alt="about-image" />
                         <div className={aboutCSS.about_info}>
-                            <h3>Scrum Master <span>Munya</span></h3>
+                            <h3>Agile Transformation Leader | Senior Scrum Master & Agile Coach | Project Manager | Driving Cross-Industry Agile Success in SaaS, GRC, HCM, Finance, Retail, Insurance, and Software Development<span>Munya</span></h3>
                         </div>
                     </div>
                     <div className={aboutCSS.about_detail}>
